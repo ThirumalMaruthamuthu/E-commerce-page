@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index:1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+header.sticky{
+    background: #fff;
+    padding: 5px 10%;
+    box-shadow: 0px 0px 10px rgp(0 0 0 / 10%);
+
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+
+}
+.nav-menu{
+    display: flex;
+}
+.nav-menu a{
+    color: #222020;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-menu a:hover{
+    color: rgb(107, 212, 107);
+    border-bottom: 1px solid rgb(107, 212, 107);
+     
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #222020;
+    font-size: 25px;
+    transition: all .42s ease;
+
+}
+.nav-icon i:hover{
+    color:rgb(107, 212, 107);
+    transform: scale(1.1);
+
+}
+.main-home{
+    padding: 5% 10%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(webpage\ picutres/add-1.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    
+}
+.main-text h5{
+    color: hotpink;
+    font-size: 16px;
+    text-transform:capitalize ;
+    font-style: italic;
+    
+}
+.main-text h1{
+    color:#222020;
+    font-size: 60px;
+    text-transform:capitalize ;
+    line-height: 1.1;
+    margin: 6px 0 10px;
+    
+}
+.shop-now-btn{
+    display:inline-block ;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.shop-now-btn:hover{
+    background-color: black;
+    color: white;
+}
+.shop-now-btn i{
+    vertical-align: middle;
+
+}
+.specs{
+    background:#eee;
+    display: flex;
+    justify-content: space-between;
+    gap:1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 180px;
+    padding-left: 180px;
+}
+
+.specs .icons{
+    padding:10px 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.specs .icons img{
+    height:2rem;
+    
+}
+
+.specs .icons h3{
+    color:#333;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+.specs .icons p{
+    color:#555;
+    font-size: 10px;
+}
+.line{
+    padding-right: 180px;
+    padding-left: 180px;
+}
+
+.product-menu{
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+
+}
+
+.product-menu a{
+    color: #222020;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 0px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+    
+}
+
+.product-menu a:hover{
+        color: rgb(99, 235, 99);
+        border-bottom:1px solid rgb(99, 235, 99);
+
+}
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    padding-right:180px ;
+    padding-left: 180px;
+
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: 300px;
+    padding-bottom: 20px;
+    transition: all .40s;
+
+}
+.row .product-text a{
+    color: #555;
+}
+.row .product-text a:hover{
+    color: #5aeb47;
+    border-bottom:1px solid #5aeb47;
+
+}
+.row .product-text p{
+    color:black;
+    font-weight: bold;
+}
+
+button.go-to-shop-now-btn{
+    position:relative;
+    top: 50%;
+    left:44%;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 2px solid rgb(48, 236, 64);
+    padding: 12px 25px; 
+    transition: all .42s ease;
+}
+    
+.go-to-shop-now-btn:hover{
+    background-color: rgb(176, 230, 78);
+    color: rgb(63, 230, 113);
+}
+.go-to-shop-now-btn i{
+    vertical-align: middle;
+
+}
+.adds{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    padding-right: 180px;
+    padding-left: 180px;
+    
+    
+}
+.adds-1{
+    width: 40%;
+    height: 30vh;
+    background-image: url(./webpage\ picutres/Banner-1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.adds-1 h3{
+    position: relative;
+    top: 60px;
+    left: 220px;
+    color:black;
+    font-size: 20px;
+    text-transform:capitalize ;
+    font-weight: lighter;
+    
+}
+.shop-now-btn-1{
+    position: relative;
+    top: 40px;
+    left: 220px;
+    color:#222020;
+    font-size: 10px;
+    text-transform:capitalize ;
+    margin: 6px 0 10px;
+    font-weight: bold;
+    border-bottom: 1px solid#141313;
+    
+}
+
+.adds-2{
+    width: 40%;
+    height: 30vh;
+    background-image: url(webpage\ picutres/Banner-2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.adds-2 h3{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    color:black;
+    font-size: 20px;
+    text-transform:capitalize ;
+    font-weight: lighter;
+    
+}
+.shop-now-btn-2{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    color:#222020;
+    font-size: 10px;
+    text-transform:capitalize ;
+    margin: 6px 0 10px;
+    font-weight: bold;
+    border-bottom: 1px solid#141313;
+}
+.newsletter{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 5px;
+}
+.offer{
+    text-align: center;
+    font-size: small;
+    font-weight: lighter;
+    color: #807474;
+}
+.Subscribe-bar{
+position: relative;
+padding-top:50px;
+padding-bottom: 50px;
+padding-left    :470px; 
+}
+.Subscribe-bar input{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+.Subscribe-bar button{
+    width: 110px;
+    padding: 10px;
+    background: #07090a;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    
+}
+  
+.footer .box-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+	
+}
+.footer .box-container .box-2 img{
+    width: 60px;
+    height: 40px;
+    align-items: center;
+
+}
+.footer .box-container .box-2 span{
+    text-align: center;
+}
+   
+.footer .box-container .box-3{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+   
+}
+.footer .box-container .box-3 img{
+    width: 30px;
+    height: 30px;
+}
+span{
+    position: relative;
+    padding-left: 600px;
+}
+.footer-bar{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.footer-bar a{
+    color: #222020;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+
+
+
+
+
+
+
